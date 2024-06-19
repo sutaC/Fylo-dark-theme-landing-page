@@ -1,0 +1,50 @@
+.hero {
+    position: relative;
+    padding: var(--pad-root);
+    text-align: center;
+    isolation: isolate;
+}
+
+.hero::before {
+    position: absolute;
+    inset: 0;
+    display: block;
+    content: "";
+    height: 70%;
+    width: 100%;
+    background: url("/images/bg-curvy-mobile.svg") no-repeat bottom;
+    background-size: 100%;
+    background-color: var(--clr-pri-intro-bg);
+    z-index: -10;
+}
+
+.illustration {
+    width: 100%;
+    display: block;
+    max-width: 80%;
+    margin: auto;
+    max-width: 30rem;
+}
+
+.hero h1 {
+    font-size: 1.8rem;
+    max-width: 35rem;
+    margin: auto;
+}
+
+.subscript {
+    text-wrap: balance;
+    margin: 1.75rem auto;
+    max-width: 35rem;
+}
+
+@media (width >= 800px) {
+    .hero {
+        min-height: 90vh;
+    }
+
+    .hero::before {
+        height: 100%;
+        background-image: url("/images/bg-curvy-desktop.svg");
+    }
+}

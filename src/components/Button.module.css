@@ -1,0 +1,10 @@
+.button {
+    padding: 1em 5em;
+    text-align: center;
+    font-weight: var(--fw-bold);
+    background: var(--grd-cat);
+    border: none;
+    border-radius: 2rem;
+    color: var(--clr-neu-base);
+    box-shadow: 0 0.4em 0.2em var(--clr-neu-shadow);
+}
