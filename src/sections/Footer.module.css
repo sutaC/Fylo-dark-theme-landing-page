@@ -18,6 +18,12 @@
 .nav li {
     list-style: none;
     margin-bottom: 1.25em;
+    opacity: 0.8;
+    transition: all 200ms ease-out;
+}
+
+.nav li:is(:hover, :focus-visible) {
+    opacity: 1;
 }
 
 .nav a {
@@ -67,6 +73,13 @@
     aspect-ratio: 1;
     border-radius: 100%;
     border: 1px solid var(--clr-neu-base);
+    opacity: 1;
+    transition: all 200ms ease-out;
+}
+
+.socials a:is(:hover, :focus-visible) {
+    color: var(--clr-acc-cta-grd-1);
+    border-color: var(--clr-acc-cta-grd-1);
 }
 
 @media (width >= 800px) {

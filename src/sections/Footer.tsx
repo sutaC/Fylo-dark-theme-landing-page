@@ -23,7 +23,9 @@ export default function Footer() {
                 </ul>
 
                 <ul className={styles.other}>
-                    <li>About Us</li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
                     <li>
                         <a href="#">Jobs</a>
                     </li>
@@ -36,7 +38,9 @@ export default function Footer() {
                 </ul>
 
                 <ul className={styles.other}>
-                    <li>Contact Us</li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
                     <li>
                         <a href="#">Terms</a>
                     </li>

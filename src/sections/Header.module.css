@@ -24,8 +24,8 @@
 .nav a {
     color: var(--clr-neu-base);
     text-decoration: none;
-    translate: all 200ms ease-out;
     opacity: 0.8;
+    transition: all 200ms ease-out;
 }
 
 .nav a:is(:hover, :focus-visible) {
