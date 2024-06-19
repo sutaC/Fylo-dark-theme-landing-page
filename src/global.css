@@ -45,17 +45,22 @@
     /* Font weight */
     --fw-normal: 400;
     --fw-bold: 700;
+
+    /* Scheme */
+    --pad-root: 1.5rem;
 }
 
 html {
     font-family: var(--ff-body);
     font-weight: var(--fw-normal);
     font-size: 0.875rem; /* 14px base */
+    color: var(--clr-neu-base);
 }
 
 body {
     min-height: 100vh;
     margin: 0;
+    background: var(--clr-pri-main-bg);
 }
 
 #root {
@@ -65,4 +70,9 @@ body {
 :where(h1, h2, h3, h4, h5, h6) {
     font-family: var(--ff-headers);
     font-weight: var(--fw-bold);
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
