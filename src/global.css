@@ -58,6 +58,7 @@ html {
     font-weight: var(--fw-normal);
     font-size: 0.875rem; /* 14px base */
     color: var(--clr-neu-base);
+    scroll-behavior: smooth;
 }
 
 body {

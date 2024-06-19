@@ -1,0 +1,27 @@
+.features {
+    padding: calc(var(--pad-root) * 3) var(--pad-root);
+    text-align: center;
+    text-wrap: balance;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.feature {
+    margin: auto;
+    max-width: 50ch;
+}
+
+.header {
+    font-weight: var(--fw-bold);
+    font-size: 1.25em;
+    margin: 0.8em auto;
+}
+
+@media (width >= 800px) {
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
