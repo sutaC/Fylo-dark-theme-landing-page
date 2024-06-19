@@ -19,11 +19,10 @@
 }
 
 .illustration {
-    width: 100%;
     display: block;
-    max-width: 80%;
-    margin: auto;
+    width: 100%;
     max-width: 30rem;
+    margin: auto;
 }
 
 .hero h1 {

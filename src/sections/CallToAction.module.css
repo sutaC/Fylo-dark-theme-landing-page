@@ -1,0 +1,57 @@
+.callToAction {
+    padding: calc(var(--pad-root) * 3) var(--pad-root);
+}
+
+.illustration {
+    display: block;
+    width: 100%;
+    max-width: 30rem;
+    margin: auto;
+}
+
+.callToAction h2 {
+    font-size: 1.25em;
+}
+
+.description {
+    max-width: 60ch;
+}
+
+.link {
+    position: relative;
+    width: fit-content;
+    color: var(--clr-acc-cta-grd-1);
+    text-decoration: none;
+    display: flex;
+}
+
+.link::after {
+    /* Arrow */
+    content: "";
+    text-align: center;
+    display: inline-block;
+    width: 1em;
+    aspect-ratio: 1;
+    background: url("/images/icon-arrow.svg") no-repeat center;
+    margin-inline: 0.5em;
+}
+
+.link::before {
+    /* Underline */
+    position: absolute;
+    bottom: -0.5em;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid var(--clr-acc-cta-grd-1);
+}
+
+@media (width >= 800px) {
+    .callToAction {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+}

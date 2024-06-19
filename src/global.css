@@ -20,9 +20,9 @@
 
     /* Accent */
     /* Cyan (inside call-to-action gradient): hsl(176, 68%, 64%) */
-    --clr-acc-cat-grd-1: hsl(176, 68%, 64%);
+    --clr-acc-cta-grd-1: hsl(176, 68%, 64%);
     /* Blue (inside call-to-action gradient): hsl(198, 60%, 50%) */
-    --clr-acc-cat-grd-2: hsl(198, 60%, 50%);
+    --clr-acc-cta-grd-2: hsl(198, 60%, 50%);
     /* Light Red (error): hsl(0, 100%, 63%) */
     --clr-acc-error: hsl(0, 100%, 63%);
 
@@ -33,10 +33,10 @@
     --clr-neu-shadow: rgba(0, 0, 0, 0.2);
 
     /* Gradient */
-    --grd-cat: linear-gradient(
+    --grd-cta: linear-gradient(
         to right bottom,
-        var(--clr-acc-cat-grd-1),
-        var(--clr-acc-cat-grd-2)
+        var(--clr-acc-cta-grd-1),
+        var(--clr-acc-cta-grd-2)
     );
 
     /* Fonts */
