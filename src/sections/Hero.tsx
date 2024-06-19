@@ -15,7 +15,9 @@ export default function Hero() {
                 location. Access them wherever you need, share and collaborate
                 with friends family, and co-workers.
             </p>
-            <Button>Get Started</Button>
+            <a href="#getstarted">
+                <Button>Get Started</Button>
+            </a>
         </main>
     );
 }
