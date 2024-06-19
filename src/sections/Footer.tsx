@@ -5,7 +5,7 @@ export default function Footer() {
         <footer className={styles.footer}>
             <img src="/images/logo.svg" alt="Logo" className={styles.logo} />
 
-            <nav className={styles.nav}>
+            <div className={styles.nav}>
                 <ul className={styles.contact}>
                     <li>
                         <a href="#">
@@ -90,7 +90,7 @@ export default function Footer() {
                         </a>
                     </li>
                 </ul>
-            </nav>
+            </div>
         </footer>
     );
 }
