@@ -1,5 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
 * {
     box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+
+    /* Primary */
+    /* Dark Blue (intro and email sign up background): hsl(217, 28%, 15%) */
+    --clr-pri-intro-bg: hsl(217, 28%, 15%);
+    /* Dark Blue (main background): hsl(218, 28%, 13%) */
+    --clr-pri-main-bg: hsl(218, 28%, 13%);
+    /* Dark Blue (footer background): hsl(216, 53%, 9%) */
+    --clr-pri-footer-bg: hsl(216, 53%, 9%);
+    /* Dark Blue (testimonials background): hsl(219, 30%, 18%) */
+    --clr-pri-testimonial-bg: hsl(219, 30%, 18%);
+
+    /* Accent */
+    /* Cyan (inside call-to-action gradient): hsl(176, 68%, 64%) */
+    --clr-acc-cat-grd-1: hsl(176, 68%, 64%);
+    /* Blue (inside call-to-action gradient): hsl(198, 60%, 50%) */
+    --clr-acc-cat-grd-2: hsl(198, 60%, 50%);
+    /* Light Red (error): hsl(0, 100%, 63%) */
+    --clr-acc-error: hsl(0, 100%, 63%);
+
+    /* Neutral */
+    /* White: hsl(0, 0%, 100%) */
+    --clr-neu-base: hsl(0, 0%, 100%);
+
+    /* Gradient */
+    --grd-cat: linear-gradient(
+        var(--clr-acc-cat-grd-1),
+        var(--clr-acc-cat-grd-2)
+    );
+
+    /* Fonts */
+
+    /* Font family */
+    --ff-headers: "Raleway", sans-serif;
+    --ff-body: "Open Sans", sans-serif;
+
+    /* Font weight */
+    --fw-normal: 400;
+    --fw-bold: 700;
+}
+
+html {
+    font-family: var(--ff-body);
+    font-weight: var(--fw-normal);
+    font-size: 0.875rem; /* 14px base */
 }
 
 body {
@@ -9,4 +60,9 @@ body {
 
 #root {
     min-height: 100vh;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+    font-family: var(--ff-headers);
+    font-weight: var(--fw-bold);
 }
