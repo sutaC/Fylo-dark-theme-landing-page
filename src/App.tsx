@@ -3,6 +3,7 @@ import Hero from "./sections/Hero";
 import Features from "./sections/Features";
 import CallToAction from "./sections/CallToAction";
 import Team from "./sections/Team";
+import GetStarted from "./sections/GetStarted";
 
 export default function App() {
     return (
@@ -12,6 +13,7 @@ export default function App() {
             <Features />
             <CallToAction />
             <Team />
+            <GetStarted />
         </>
     );
 }

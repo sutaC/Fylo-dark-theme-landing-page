@@ -7,7 +7,7 @@ export default function Header() {
             <nav className={styles.nav}>
                 <a href="#features">Features</a>
                 <a href="#team">Team</a>
-                <a href="#signin">Sign In</a>
+                <a href="#getstarted">Sign In</a>
             </nav>
         </header>
     );
