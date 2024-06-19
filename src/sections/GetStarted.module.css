@@ -45,6 +45,21 @@
     border-radius: 2rem;
 }
 
+.inputContainer {
+    position: relative;
+}
+
+.inputContainer:has(input:invalid)::after {
+    content: "Please enter a valid email address";
+    position: absolute;
+    left: 2em;
+    bottom: -1.75em;
+    display: block;
+    font-size: 0.8em;
+    font-weight: var(--fw-bold);
+    color: var(--clr-acc-error);
+}
+
 .form button {
     width: 100%;
 }
@@ -54,7 +69,7 @@
         flex-direction: row;
     }
 
-    .form input {
+    .inputContainer {
         flex: 3;
     }
 

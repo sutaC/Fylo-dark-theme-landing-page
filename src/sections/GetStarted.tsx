@@ -22,12 +22,14 @@ export default function GetStarted() {
                     support team would be happy to help you.
                 </p>
                 <form className={styles.form} onSubmit={handleSubmit}>
-                    <input
-                        name="email"
-                        type="email"
-                        className={styles.email}
-                        placeholder="email@examplce.com"
-                    />
+                    <div className={styles.inputContainer}>
+                        <input
+                            name="email"
+                            type="email"
+                            className={styles.email}
+                            placeholder="email@examplce.com"
+                        />
+                    </div>
                     <Button type="submit">Get Started For Free</Button>
                 </form>
             </div>
