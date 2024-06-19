@@ -29,8 +29,10 @@
     /* Neutral */
     /* White: hsl(0, 0%, 100%) */
     --clr-neu-base: hsl(0, 0%, 100%);
-    /* Black (shadows): rgba(0, 0, 0, 0.2); */
+    /* Black (shadows): rgba(0, 0, 0, 0.2) */
     --clr-neu-shadow: rgba(0, 0, 0, 0.2);
+    /* Black (glow): rgba(255, 255, 255, 0.2) */
+    --clr-neu-glow: rgba(255, 255, 255, 0.1);
 
     /* Gradient */
     --grd-cta: linear-gradient(

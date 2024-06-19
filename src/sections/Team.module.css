@@ -1,0 +1,73 @@
+.team {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: calc(var(--pad-root) * 3) var(--pad-root);
+    isolation: isolate;
+}
+
+.team::before {
+    position: absolute;
+    top: calc(var(--pad-root) + 1rem);
+    left: calc(var(--pad-root) + 0.5rem);
+    content: "";
+    display: block;
+    width: 2.5rem;
+    aspect-ratio: 1;
+    background: url("/images/bg-quotes.png") no-repeat center;
+    background-size: contain;
+    z-index: -10;
+}
+
+.member {
+    background-color: var(--clr-pri-testimonial-bg);
+    padding: 2rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0.33rem var(--clr-neu-glow);
+}
+
+.member > p {
+    margin: 0 0 1em;
+    text-wrap: balance;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+}
+
+.person > img {
+    --_size: 3em;
+    width: var(--_size);
+    height: var(--_size);
+    border-radius: 100%;
+}
+
+.nameTag {
+    font-size: 0.8em;
+}
+
+.nameTag p {
+    margin: 0.5em 0;
+}
+
+.name {
+    font-size: 1.25em;
+    font-weight: var(--fw-bold);
+}
+
+@media (width >= 800px) {
+    .team {
+        flex-direction: row;
+    }
+
+    .team::before {
+        width: 3.5rem;
+        top: calc(var(--pad-root) + 2rem);
+        left: calc(var(--pad-root) - 0.75rem);
+    }
+}
