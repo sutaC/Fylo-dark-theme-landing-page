@@ -1,5 +1,7 @@
 .callToAction {
     padding: calc(var(--pad-root) * 3) var(--pad-root);
+    max-width: 80rem;
+    margin: auto;
 }
 
 .illustration {

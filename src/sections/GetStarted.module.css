@@ -19,7 +19,7 @@
 .card {
     max-width: 60rem;
     margin: auto;
-    padding: 2rem;
+    padding: 3rem;
     border-radius: 1rem;
     background-color: var(--clr-pri-intro-bg);
     text-align: center;
