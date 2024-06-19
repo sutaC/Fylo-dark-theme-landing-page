@@ -8,4 +8,18 @@
     color: var(--clr-neu-base);
     box-shadow: 0 0.4em 0.2em var(--clr-neu-shadow);
     cursor: pointer;
+    translate: all 200ms ease-out;
+}
+
+.button:is(:hover, :focus-visible) {
+    background: color-mix(
+        in srgb,
+        var(--clr-acc-cta-grd-1) 100%,
+        var(--clr-neu-base) 25%
+    );
+}
+
+.button:active {
+    translate: 0 2px;
+    box-shadow: inset 0 0.4em 0.2em var(--clr-neu-shadow);
 }
